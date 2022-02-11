@@ -1,4 +1,5 @@
 import React from "react";
+import { API_URL } from "../config";
 
 class SignUp extends React.Component {
   constructor(props) {
@@ -24,7 +25,7 @@ class SignUp extends React.Component {
     event.preventDefault();
     const { history } = this.props;
 
-    await fetch("http://localhost:3333/users", {
+    await fetch(`${API_URL}/users`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -1,5 +1,7 @@
+import { API_URL } from "../config";
+
 export async function getLoginToken({ username, password }) {
-    return fetch(`http://localhost:3333/login`, {
+    return fetch(`${API_URL}/login`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

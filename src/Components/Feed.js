@@ -1,6 +1,7 @@
 import React from "react";
 import jwtDecode from "jwt-decode";
 import { Link } from "react-router-dom";
+import { API_URL } from "../config";
 
 class Feed extends React.Component {
   constructor(props) {
@@ -19,7 +20,7 @@ class Feed extends React.Component {
 
   async getTweets() {
     console.log("getTweets running");
-    const twats = await this.getJSON("http://localhost:3333/tweets");
+    const twats = await this.getJSON(`${API_URL}/tweets`);
     this.setState({
       twats,
     });
@@ -34,7 +35,7 @@ class Feed extends React.Component {
   }
 
   async handleSubmit() {
-    await fetch(`http://localhost:3333/tweets/${this.state.payload.id}`, {
+    await fetch(`${API_URL}/tweets/${this.state.payload.id}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

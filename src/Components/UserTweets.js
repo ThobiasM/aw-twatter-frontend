@@ -1,4 +1,5 @@
 import React from "react";
+import { API_URL } from "../config";
 
 class UserTweets extends React.Component {
   constructor(props) {
@@ -20,7 +21,7 @@ class UserTweets extends React.Component {
     console.log("getTweets running");
     console.log(username);
     const twats = await this.getJSON(
-      `http://localhost:3333/tweets/${username}`
+      `${API_URL}/tweets/${username}`
     );
     console.log(twats);
     this.setState({

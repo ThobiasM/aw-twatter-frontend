@@ -1,4 +1,5 @@
 import React from "react";
+import { API_URL } from "../config";
 
 class CreateTwat extends React.Component {
   constructor(props) {
@@ -28,7 +29,7 @@ class CreateTwat extends React.Component {
   async handleSubmit (event) {
     event.preventDefault();
 
-    fetch(`http://localhost:3333/tweets/1`, {
+    fetch(`${API_URL}/tweets/1`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
