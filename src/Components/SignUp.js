@@ -45,7 +45,7 @@ class SignUp extends React.Component {
       <div className="signupMain">
         <div className="signupContainer">
           <h1>Sign up to Twatter!</h1>
-          <form className="signupForm">
+          <div className="signupForm">
             <div>
               <label>Name: </label>
               <input
@@ -72,7 +72,7 @@ class SignUp extends React.Component {
               />
             </div>
             <button onClick={this.handleSubmit.bind(this)}>Become a twat!</button>{" "}
-          </form>
+          </div>
         </div>
       </div>
     );

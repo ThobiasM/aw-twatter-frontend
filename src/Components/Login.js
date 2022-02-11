@@ -54,7 +54,7 @@ class Login extends React.Component {
   render() {
     return (
       <div className="centered mainLogin">
-        <form className="loginForm loginContainer">
+        <div className="loginForm loginContainer">
           <div>
             <label>Username: </label>
             <input
@@ -80,7 +80,7 @@ class Login extends React.Component {
           <div>
             <Link to="/signup">Not a member? Become a Twat today!</Link>
           </div>
-        </form>
+        </div>
       </div>
     );
   }
