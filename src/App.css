@@ -1,0 +1,80 @@
+header {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 200px;
+  background-color: rgb(46, 129, 101);
+  color: white;
+  text-align: center;
+}
+
+.feedTitle {
+  padding-left: 40px;
+}
+
+ul {
+  list-style: none;
+  padding-right: 40px;
+}
+
+li {
+  border: 1px solid lightgray;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+.postTwat {
+  height: 50px;
+  color: rgb(46, 129, 101);
+  font-weight: bolder;
+  margin-right: 20px; 
+}
+
+.centered {
+  text-align: center;
+}
+
+.secretKey {
+  width: 600px;
+  margin: 50px;
+}
+.mainLogin {
+  display: flex;
+  justify-content: center;
+}
+
+.loginContainer {
+  display: flex;
+  flex-flow: column wrap;
+  color: white;
+  justify-content: center;
+  gap: 20px;
+  background-color: rgb(46, 129, 101);
+  width: 500px;
+  height: 400px;
+  margin-top: 50px;
+}
+.loginBtn {
+  width: 100px;
+}
+.signupMain {
+  display: flex;
+  justify-content: center;
+}
+.signupForm {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: rgb(46, 129, 101);
+  width: 500px;
+  height: 400px;
+}
+.createTwat {
+  display: flex;
+  justify-content:center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.createTwatField {
+  width: 400px;
+}
